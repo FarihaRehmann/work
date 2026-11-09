@@ -1,0 +1,250 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f5f3ff;
+  color: #45445b;
+  padding: 30px 15px;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.small-heading {
+  color: #a18bd5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 45px;
+  color: #7865aa;
+  margin: 5px 0;
+}
+
+.subtitle {
+  color: #9290a8;
+  font-size: 14px;
+}
+
+.welcome-card {
+  background: linear-gradient(120deg, #e9e2ff, #fce8f1);
+  border-radius: 22px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.welcome-card h2 {
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.welcome-card p {
+  color: #85809c;
+  font-size: 13px;
+}
+
+.progress-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #806bb4;
+  flex-shrink: 0;
+}
+
+.progress-circle span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.progress-circle small {
+  font-size: 10px;
+}
+
+.date-tabs {
+  display: flex;
+  gap: 9px;
+  overflow-x: auto;
+  padding: 5px 2px 15px;
+}
+
+.date-tab {
+  border: none;
+  min-width: 75px;
+  padding: 12px 10px;
+  border-radius: 13px;
+  background: white;
+  color: #85809c;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.date-tab span {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.date-tab.active {
+  background: #9b87ca;
+  color: white;
+  box-shadow: 0 5px 13px #b7a8dc66;
+}
+
+.progress-section {
+  background: white;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+#taskCount {
+  color: #9992b2;
+}
+
+.progress-track {
+  height: 10px;
+  background: #eeeaf8;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #a18bd5, #e7a9c7);
+  border-radius: 20px;
+  transition: width 0.3s;
+}
+
+.task-card {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px #8f82b00d;
+}
+
+.task-card h3 {
+  color: #7865aa;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 11px 0;
+  border-bottom: 1px solid #f1eff6;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task input {
+  accent-color: #9882c9;
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #aaa5b9;
+}
+
+.task-time {
+  display: block;
+  color: #aaa0c6;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.reset-area {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.reset-btn {
+  border: 1px solid #d9d0ec;
+  background: white;
+  color: #8b79b6;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #f0ebfa;
+}
+
+footer {
+  text-align: center;
+  color: #a39bb8;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  padding: 15px;
+}
+
+@media (max-width: 550px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  h1 {
+    font-size: 37px;
+  }
+
+  .welcome-card {
+    padding: 18px;
+  }
+
+  .welcome-card h2 {
+    font-size: 17px;
+  }
+
+  .task-card {
+    padding: 16px;
+  }
+}

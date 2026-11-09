@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Daily Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <p class="small-heading">MY STUDY SPACE ✿</p>
+      <h1>Daily Study Planner</h1>
+      <p class="subtitle">One day at a time. One task at a time.</p>
+    </header>
+
+    <section class="welcome-card">
+      <div>
+        <h2 id="dayTitle">Wednesday, 11 November</h2>
+        <p id="dayQuote">Let's make today productive!</p>
+      </div>
+      <div class="progress-circle">
+        <span id="progressNumber">0%</span>
+        <small>Done</small>
+      </div>
+    </section>
+
+    <nav class="date-tabs" id="dateTabs"></nav>
+
+    <section class="progress-section">
+      <div class="progress-label">
+        <span>Daily progress</span>
+        <span id="taskCount">0 / 0 tasks</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </section>
+
+    <main id="taskContainer"></main>
+
+    <div class="reset-area">
+      <button id="resetButton" class="reset-btn">Reset this day's progress</button>
+    </div>
+
+    <footer>
+      <p>Small steps every day add up to big results ♡</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
